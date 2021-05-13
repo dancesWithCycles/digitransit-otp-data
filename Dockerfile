@@ -12,8 +12,8 @@ RUN mkdir -p /opt/opentripplanner/build/$ROUTER_NAME/
 
 # add build data
 # NOTE: we're trying to use dockers caching here. add items in order of least to most frequent changes
-ADD https://rgw1.netways.de/swift/v1/AUTH_66c3085bb69a42ed8991c90e5c1f453e/digitransit/osm/tuebingen-schwaben-latest.osm.pbf /opt/opentripplanner/build/$ROUTER_NAME/
-ADD https://gtfs.mfdz.de/ulm.merged.gtfs.zip /opt/opentripplanner/build/$ROUTER_NAME/
+ADD https://dedriver.org/share/avv.pbf /opt/opentripplanner/build/$ROUTER_NAME/
+ADD http://opendata.avv.de/current_GTFS/AVV_GTFS_mit_SPNV.zip /opt/opentripplanner/build/$ROUTER_NAME/
 ADD router-config.json /opt/opentripplanner/build/$ROUTER_NAME/
 ADD build-config.json /opt/opentripplanner/build/$ROUTER_NAME/
 
