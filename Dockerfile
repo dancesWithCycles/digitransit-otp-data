@@ -3,7 +3,7 @@ FROM mfdz/opentripplanner:$OTP_VERSION AS otp
 
 # defined empty, so we can access the arg as env later again
 ARG OTP_VERSION
-ENV ROUTER_NAME=vsh
+ENV ROUTER_NAME=avv
 
 RUN apk add --update zip && \
     rm -rf /var/cache/apk/*
